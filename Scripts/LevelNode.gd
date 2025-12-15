@@ -5,3 +5,4 @@ var xPos:int
 var yPos:int
 var floor: LevelFloor
 var lobject: LevelObject
+var agent: Agent

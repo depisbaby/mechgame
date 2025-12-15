@@ -25,7 +25,7 @@ func PrepareLevel(
 	
 	nodes.resize(levelWidth*levelHeight)
 	
-	var i:int
+	var i:int = 0
 	for y in levelHeight:
 		for x in levelWidth:
 			var node: LevelNode = levelNodePackedScene.instantiate()

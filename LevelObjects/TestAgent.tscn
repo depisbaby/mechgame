@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://w60orf2frbpu"]
+
+[ext_resource type="Script" uid="uid://c8u8hpkj0t687" path="res://Scripts/Agent.gd" id="1_6mtut"]
+[ext_resource type="Texture2D" uid="uid://c3u3cmguxidlq" path="res://Sprites/mech.png" id="2_swk38"]
+
+[node name="TestAgent" type="Node2D"]
+script = ExtResource("1_6mtut")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_swk38")
