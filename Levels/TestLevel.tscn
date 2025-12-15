@@ -6,8 +6,8 @@
 
 [node name="TestLevel" type="Node2D"]
 script = ExtResource("1_uib4f")
-levelWidth = 7
-levelHeight = 5
+levelWidth = 14
+levelHeight = 12
 
 [node name="LevelFloor" parent="." instance=ExtResource("2_iqcmb")]
 
@@ -113,8 +113,407 @@ position = Vector2(80, 64)
 [node name="LevelFloor35" parent="." instance=ExtResource("2_iqcmb")]
 position = Vector2(96, 64)
 
+[node name="LevelFloor36" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 0)
+
+[node name="LevelFloor37" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 0)
+
+[node name="LevelFloor38" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 0)
+
+[node name="LevelFloor39" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 0)
+
+[node name="LevelFloor40" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 0)
+
+[node name="LevelFloor41" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 0)
+
+[node name="LevelFloor42" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 0)
+
+[node name="LevelFloor43" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 16)
+
+[node name="LevelFloor44" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 16)
+
+[node name="LevelFloor45" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 16)
+
+[node name="LevelFloor46" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 16)
+
+[node name="LevelFloor47" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 16)
+
+[node name="LevelFloor48" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 16)
+
+[node name="LevelFloor49" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 16)
+
+[node name="LevelFloor50" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 32)
+
+[node name="LevelFloor51" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 32)
+
+[node name="LevelFloor52" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 32)
+
+[node name="LevelFloor53" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 32)
+
+[node name="LevelFloor54" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 32)
+
+[node name="LevelFloor55" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 32)
+
+[node name="LevelFloor56" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 32)
+
+[node name="LevelFloor57" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 48)
+
+[node name="LevelFloor58" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 48)
+
+[node name="LevelFloor59" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 48)
+
+[node name="LevelFloor60" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 48)
+
+[node name="LevelFloor61" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 48)
+
+[node name="LevelFloor62" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 48)
+
+[node name="LevelFloor63" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 48)
+
+[node name="LevelFloor64" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 64)
+
+[node name="LevelFloor65" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 64)
+
+[node name="LevelFloor66" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 64)
+
+[node name="LevelFloor67" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 64)
+
+[node name="LevelFloor68" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 64)
+
+[node name="LevelFloor69" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 64)
+
+[node name="LevelFloor70" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 64)
+
+[node name="LevelFloor71" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(0, 80)
+
+[node name="LevelFloor72" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(16, 80)
+
+[node name="LevelFloor73" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(32, 80)
+
+[node name="LevelFloor74" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(48, 80)
+
+[node name="LevelFloor75" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(64, 80)
+
+[node name="LevelFloor76" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(80, 80)
+
+[node name="LevelFloor77" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(96, 80)
+
+[node name="LevelFloor78" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(0, 96)
+
+[node name="LevelFloor79" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(16, 96)
+
+[node name="LevelFloor80" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(32, 96)
+
+[node name="LevelFloor81" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(48, 96)
+
+[node name="LevelFloor82" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(64, 96)
+
+[node name="LevelFloor83" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(80, 96)
+
+[node name="LevelFloor84" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(96, 96)
+
+[node name="LevelFloor85" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(0, 112)
+
+[node name="LevelFloor86" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(16, 112)
+
+[node name="LevelFloor87" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(32, 112)
+
+[node name="LevelFloor88" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(48, 112)
+
+[node name="LevelFloor89" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(64, 112)
+
+[node name="LevelFloor90" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(80, 112)
+
+[node name="LevelFloor91" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(96, 112)
+
+[node name="LevelFloor92" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(0, 128)
+
+[node name="LevelFloor93" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(16, 128)
+
+[node name="LevelFloor94" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(32, 128)
+
+[node name="LevelFloor95" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(48, 128)
+
+[node name="LevelFloor96" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(64, 128)
+
+[node name="LevelFloor97" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(80, 128)
+
+[node name="LevelFloor98" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(96, 128)
+
+[node name="LevelFloor99" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(0, 144)
+
+[node name="LevelFloor100" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(16, 144)
+
+[node name="LevelFloor101" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(32, 144)
+
+[node name="LevelFloor102" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(48, 144)
+
+[node name="LevelFloor103" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(64, 144)
+
+[node name="LevelFloor104" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(80, 144)
+
+[node name="LevelFloor105" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(96, 144)
+
+[node name="LevelFloor106" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 80)
+
+[node name="LevelFloor107" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 80)
+
+[node name="LevelFloor108" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 80)
+
+[node name="LevelFloor109" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 80)
+
+[node name="LevelFloor110" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 80)
+
+[node name="LevelFloor111" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 80)
+
+[node name="LevelFloor112" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 80)
+
+[node name="LevelFloor113" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 96)
+
+[node name="LevelFloor114" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 96)
+
+[node name="LevelFloor115" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 96)
+
+[node name="LevelFloor116" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 96)
+
+[node name="LevelFloor117" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 96)
+
+[node name="LevelFloor118" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 96)
+
+[node name="LevelFloor119" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 96)
+
+[node name="LevelFloor120" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 112)
+
+[node name="LevelFloor121" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 112)
+
+[node name="LevelFloor122" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 112)
+
+[node name="LevelFloor123" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 112)
+
+[node name="LevelFloor124" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 112)
+
+[node name="LevelFloor125" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 112)
+
+[node name="LevelFloor126" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 112)
+
+[node name="LevelFloor127" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 128)
+
+[node name="LevelFloor128" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 128)
+
+[node name="LevelFloor129" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 128)
+
+[node name="LevelFloor130" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 128)
+
+[node name="LevelFloor131" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 128)
+
+[node name="LevelFloor132" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 128)
+
+[node name="LevelFloor133" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 128)
+
+[node name="LevelFloor134" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 144)
+
+[node name="LevelFloor135" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 144)
+
+[node name="LevelFloor136" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 144)
+
+[node name="LevelFloor137" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 144)
+
+[node name="LevelFloor138" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 144)
+
+[node name="LevelFloor139" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 144)
+
+[node name="LevelFloor140" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 144)
+
+[node name="LevelFloor141" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(0, 160)
+
+[node name="LevelFloor142" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(16, 160)
+
+[node name="LevelFloor143" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(32, 160)
+
+[node name="LevelFloor144" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(48, 160)
+
+[node name="LevelFloor145" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(64, 160)
+
+[node name="LevelFloor146" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(80, 160)
+
+[node name="LevelFloor147" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(96, 160)
+
+[node name="LevelFloor148" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(0, 176)
+
+[node name="LevelFloor149" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(16, 176)
+
+[node name="LevelFloor150" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(32, 176)
+
+[node name="LevelFloor151" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(48, 176)
+
+[node name="LevelFloor152" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(64, 176)
+
+[node name="LevelFloor153" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(80, 176)
+
+[node name="LevelFloor154" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(96, 176)
+
+[node name="LevelFloor155" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 160)
+
+[node name="LevelFloor156" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 160)
+
+[node name="LevelFloor157" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 160)
+
+[node name="LevelFloor158" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 160)
+
+[node name="LevelFloor159" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 160)
+
+[node name="LevelFloor160" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 160)
+
+[node name="LevelFloor161" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 160)
+
+[node name="LevelFloor162" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(112, 176)
+
+[node name="LevelFloor163" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(128, 176)
+
+[node name="LevelFloor164" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(144, 176)
+
+[node name="LevelFloor165" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(160, 176)
+
+[node name="LevelFloor166" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(176, 176)
+
+[node name="LevelFloor167" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(192, 176)
+
+[node name="LevelFloor168" parent="." instance=ExtResource("2_iqcmb")]
+position = Vector2(208, 176)
+
 [node name="TestLevelObject" parent="." instance=ExtResource("3_y1yrn")]
-position = Vector2(16, 16)
+position = Vector2(32, 32)
 
 [node name="TestLevelObject2" parent="." instance=ExtResource("3_y1yrn")]
 position = Vector2(32, 16)
@@ -126,4 +525,85 @@ position = Vector2(48, 16)
 position = Vector2(48, 32)
 
 [node name="TestLevelObject5" parent="." instance=ExtResource("3_y1yrn")]
-position = Vector2(48, 48)
+position = Vector2(32, 64)
+
+[node name="TestLevelObject6" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(48, 64)
+
+[node name="TestLevelObject7" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(32, 80)
+
+[node name="TestLevelObject8" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(48, 80)
+
+[node name="TestLevelObject9" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(80, 48)
+
+[node name="TestLevelObject10" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(96, 48)
+
+[node name="TestLevelObject11" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(80, 64)
+
+[node name="TestLevelObject12" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(96, 64)
+
+[node name="TestLevelObject13" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(32, 112)
+
+[node name="TestLevelObject14" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(48, 112)
+
+[node name="TestLevelObject15" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(32, 128)
+
+[node name="TestLevelObject16" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(48, 128)
+
+[node name="TestLevelObject17" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(80, 144)
+
+[node name="TestLevelObject18" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(96, 144)
+
+[node name="TestLevelObject19" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(80, 160)
+
+[node name="TestLevelObject20" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(96, 160)
+
+[node name="TestLevelObject21" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(112, 144)
+
+[node name="TestLevelObject22" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(128, 144)
+
+[node name="TestLevelObject23" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(112, 160)
+
+[node name="TestLevelObject24" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(128, 160)
+
+[node name="TestLevelObject25" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(112, 112)
+
+[node name="TestLevelObject26" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(128, 112)
+
+[node name="TestLevelObject27" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(112, 128)
+
+[node name="TestLevelObject28" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(128, 128)
+
+[node name="TestLevelObject29" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(144, 48)
+
+[node name="TestLevelObject30" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(160, 48)
+
+[node name="TestLevelObject31" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(144, 64)
+
+[node name="TestLevelObject32" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(160, 64)
