@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cvffeaqlaa0js"]
+
+[ext_resource type="Texture2D" uid="uid://dn3w3mtw0uk7u" path="res://Sprites/empty.png" id="1_kpxhf"]
+[ext_resource type="Script" uid="uid://c6qpg466cl5ao" path="res://Scripts/LevelFloor.gd" id="2_3lghv"]
+
+[node name="LevelFloor" type="Sprite2D"]
+texture_filter = 1
+texture = ExtResource("1_kpxhf")
+script = ExtResource("2_3lghv")
