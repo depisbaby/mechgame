@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://mc04jdyfi1bp"]
 
 [ext_resource type="Texture2D" uid="uid://wo4txibodeqx" path="res://Sprites/block.png" id="1_sbepe"]
-[ext_resource type="Script" uid="uid://cw53h3o3lhspp" path="res://Scripts/LevelObject.gd" id="2_qgn3d"]
+[ext_resource type="Script" uid="uid://cw53h3o3lhspp" path="res://Scripts/Level Objects/LevelObject.gd" id="2_qgn3d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sbepe"]
 size = Vector2(16, 16)

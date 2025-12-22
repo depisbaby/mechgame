@@ -1,16 +1,56 @@
-[gd_scene load_steps=13 format=3 uid="uid://dmgb5ts1w22d7"]
+[gd_scene load_steps=35 format=3 uid="uid://dmgb5ts1w22d7"]
 
 [ext_resource type="Texture2D" uid="uid://bnpmwy67uo4lf" path="res://Sprites/hudt.png" id="1_l8v81"]
 [ext_resource type="Script" uid="uid://cywmfo8oumt0e" path="res://Scripts/UI/HUD.gd" id="1_tw3kd"]
 [ext_resource type="Texture2D" uid="uid://2uwwwo5dx3pm" path="res://Sprites/screen.png" id="1_vyht1"]
 [ext_resource type="Texture2D" uid="uid://ckldsu7nft4jq" path="res://Sprites/reposition.png" id="2_huihk"]
 [ext_resource type="Script" uid="uid://clglyvg53pwox" path="res://Scripts/GameManager.gd" id="2_pyidc"]
+[ext_resource type="Texture2D" uid="uid://do4xscyvft8mo" path="res://Sprites/bottombar.png" id="2_vte5o"]
 [ext_resource type="Script" uid="uid://bs18wtviw6utq" path="res://Scripts/CursorManager.gd" id="3_28aoi"]
 [ext_resource type="Script" uid="uid://remixxpcdsi6" path="res://Scripts/CameraManager.gd" id="3_jnlp7"]
 [ext_resource type="PackedScene" uid="uid://c11ol8a6qgnbw" path="res://Levels/TestLevel.tscn" id="3_vvh5c"]
 [ext_resource type="Texture2D" uid="uid://0cif0syunyau" path="res://Sprites/cursor.png" id="4_28aoi"]
 [ext_resource type="Script" uid="uid://sgu3l5eb56w3" path="res://Scripts/UI/ActionButton.gd" id="4_gd4vy"]
+[ext_resource type="FontFile" uid="uid://htku4kxxe4dp" path="res://Micro5-Regular.ttf" id="6_qwhpj"]
+[ext_resource type="Script" uid="uid://voqyqnrkhjlq" path="res://Scripts/UI/MainMenu.gd" id="7_blcw0"]
+[ext_resource type="Texture2D" uid="uid://di34ok10lrpeu" path="res://Sprites/frame.png" id="7_sq7yr"]
 [ext_resource type="PackedScene" uid="uid://w60orf2frbpu" path="res://LevelObjects/TestAgent.tscn" id="8_bf3um"]
+[ext_resource type="FontFile" uid="uid://cgkfup03i8tmi" path="res://GroutpixFTorch-zrlKL.ttf" id="8_r3r3k"]
+[ext_resource type="Script" uid="uid://be1u57ylhsxsc" path="res://Scripts/ActionManager.gd" id="9_qw60f"]
+[ext_resource type="Script" uid="uid://bu61udbtgmf0c" path="res://Scripts/BattleManager.gd" id="10_qt76e"]
+[ext_resource type="PackedScene" uid="uid://ceve1vydobqgw" path="res://PackedScenes/ActionHelperTile.tscn" id="15_3dlgs"]
+[ext_resource type="Script" uid="uid://c7jjes6xbnvow" path="res://Scripts/Actions/Reposition.gd" id="15_50g4q"]
+[ext_resource type="Script" uid="uid://bs4b0kdsvhr85" path="res://Scripts/CPU.gd" id="16_50g4q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8pgb7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3dlgs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vte5o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_po8fv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ub8w1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ynlg5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ab83r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1xb4a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0dnjj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uwexw"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qt76e"]
+line_spacing = -5.0
+font = ExtResource("6_qwhpj")
+font_size = 11
+font_color = Color(0.30588236, 0.45490196, 0.6, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_blcw0"]
+font = ExtResource("8_r3r3k")
+font_color = Color(0.30588236, 0.45490196, 0.6, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jnlp7"]
 
@@ -18,7 +58,7 @@
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="HUD" type="Control" parent="CanvasLayer"]
+[node name="HUD" type="Control" parent="CanvasLayer" node_paths=PackedStringArray("actionButtons", "agentInfo", "messageBox")]
 unique_name_in_owner = true
 layout_mode = 3
 anchors_preset = 0
@@ -26,6 +66,29 @@ offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(6, 6)
 script = ExtResource("1_tw3kd")
+actionButtons = [NodePath("ActionButton1"), NodePath("ActionButton2"), NodePath("ActionButton3"), NodePath("ActionButton4"), NodePath("ActionButton5"), NodePath("ActionButton6"), NodePath("ActionButton7"), NodePath("ActionButton8"), NodePath("ActionButton9")]
+agentInfo = NodePath("AgentInfo")
+messageBox = NodePath("Messages")
+
+[node name="BottomBar" type="TextureRect" parent="CanvasLayer/HUD"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 61.0
+offset_top = 160.66667
+offset_right = 301.0
+offset_bottom = 200.66667
+mouse_filter = 2
+texture = ExtResource("2_vte5o")
+stretch_mode = 2
+
+[node name="PassButton" type="Button" parent="CanvasLayer/HUD/BottomBar"]
+layout_mode = 0
+offset_left = 7.1666718
+offset_top = 3.3333282
+offset_right = 31.333336
+offset_bottom = 12.5
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8pgb7")
+flat = true
 
 [node name="screen1" type="TextureRect" parent="CanvasLayer/HUD"]
 texture_filter = 1
@@ -47,164 +110,183 @@ offset_bottom = 176.0
 texture = ExtResource("1_vyht1")
 stretch_mode = 1
 
-[node name="ActionButton1" type="Button" parent="CanvasLayer/HUD"]
+[node name="ActionButton1" type="Button" parent="CanvasLayer/HUD" node_paths=PackedStringArray("textRect")]
 layout_mode = 0
 offset_left = 4.0
 offset_top = 128.0
 offset_right = 20.0
 offset_bottom = 144.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3dlgs")
 flat = true
 script = ExtResource("4_gd4vy")
+textRect = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HUD/ActionButton1"]
 texture_filter = 1
 layout_mode = 0
 offset_right = 16.0
 offset_bottom = 16.0
+mouse_filter = 2
 texture = ExtResource("2_huihk")
 stretch_mode = 2
 
-[node name="ActionButton2" type="Button" parent="CanvasLayer/HUD"]
+[node name="ActionButton2" type="Button" parent="CanvasLayer/HUD" node_paths=PackedStringArray("textRect")]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 127.99999
 offset_right = 36.0
 offset_bottom = 144.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_vte5o")
 flat = true
 script = ExtResource("4_gd4vy")
-id = 1
+textRect = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HUD/ActionButton2"]
 texture_filter = 1
 layout_mode = 0
 offset_right = 16.0
 offset_bottom = 16.0
+mouse_filter = 2
 texture = ExtResource("2_huihk")
 stretch_mode = 2
 
-[node name="ActionButton3" type="Button" parent="CanvasLayer/HUD"]
+[node name="ActionButton3" type="Button" parent="CanvasLayer/HUD" node_paths=PackedStringArray("textRect")]
 layout_mode = 0
 offset_left = 36.0
 offset_top = 128.0
 offset_right = 52.0
 offset_bottom = 144.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_po8fv")
 flat = true
 script = ExtResource("4_gd4vy")
-id = 2
+textRect = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HUD/ActionButton3"]
 texture_filter = 1
 layout_mode = 0
 offset_right = 16.0
 offset_bottom = 16.0
+mouse_filter = 2
 texture = ExtResource("2_huihk")
 stretch_mode = 2
 
-[node name="ActionButton4" type="Button" parent="CanvasLayer/HUD"]
+[node name="ActionButton4" type="Button" parent="CanvasLayer/HUD" node_paths=PackedStringArray("textRect")]
 layout_mode = 0
 offset_left = 4.0
 offset_top = 144.00002
 offset_right = 20.0
 offset_bottom = 160.00002
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ub8w1")
 flat = true
 script = ExtResource("4_gd4vy")
-id = 3
+textRect = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HUD/ActionButton4"]
 texture_filter = 1
 layout_mode = 0
 offset_right = 16.0
 offset_bottom = 16.0
+mouse_filter = 2
 texture = ExtResource("2_huihk")
 stretch_mode = 2
 
-[node name="ActionButton5" type="Button" parent="CanvasLayer/HUD"]
+[node name="ActionButton5" type="Button" parent="CanvasLayer/HUD" node_paths=PackedStringArray("textRect")]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 144.0
 offset_right = 36.0
 offset_bottom = 160.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ynlg5")
 flat = true
 script = ExtResource("4_gd4vy")
-id = 4
+textRect = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HUD/ActionButton5"]
 texture_filter = 1
 layout_mode = 0
 offset_right = 16.0
 offset_bottom = 16.0
+mouse_filter = 2
 texture = ExtResource("2_huihk")
 stretch_mode = 2
 
-[node name="ActionButton6" type="Button" parent="CanvasLayer/HUD"]
+[node name="ActionButton6" type="Button" parent="CanvasLayer/HUD" node_paths=PackedStringArray("textRect")]
 layout_mode = 0
 offset_left = 36.0
 offset_top = 144.00002
 offset_right = 52.0
 offset_bottom = 160.00002
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ab83r")
 flat = true
 script = ExtResource("4_gd4vy")
-id = 5
+textRect = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HUD/ActionButton6"]
 texture_filter = 1
 layout_mode = 0
 offset_right = 16.0
 offset_bottom = 16.0
+mouse_filter = 2
 texture = ExtResource("2_huihk")
 stretch_mode = 2
 
-[node name="ActionButton7" type="Button" parent="CanvasLayer/HUD"]
+[node name="ActionButton7" type="Button" parent="CanvasLayer/HUD" node_paths=PackedStringArray("textRect")]
 layout_mode = 0
 offset_left = 4.0
 offset_top = 160.00002
 offset_right = 20.0
 offset_bottom = 176.00002
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1xb4a")
 flat = true
 script = ExtResource("4_gd4vy")
-id = 6
+textRect = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HUD/ActionButton7"]
 texture_filter = 1
 layout_mode = 0
 offset_right = 16.0
 offset_bottom = 16.0
+mouse_filter = 2
 texture = ExtResource("2_huihk")
 stretch_mode = 2
 
-[node name="ActionButton8" type="Button" parent="CanvasLayer/HUD"]
+[node name="ActionButton8" type="Button" parent="CanvasLayer/HUD" node_paths=PackedStringArray("textRect")]
 layout_mode = 0
 offset_left = 20.0
 offset_top = 160.0
 offset_right = 36.0
 offset_bottom = 176.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0dnjj")
 flat = true
 script = ExtResource("4_gd4vy")
-id = 7
+textRect = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HUD/ActionButton8"]
 texture_filter = 1
 layout_mode = 0
 offset_right = 16.0
 offset_bottom = 16.0
+mouse_filter = 2
 texture = ExtResource("2_huihk")
 stretch_mode = 2
 
-[node name="ActionButton9" type="Button" parent="CanvasLayer/HUD"]
+[node name="ActionButton9" type="Button" parent="CanvasLayer/HUD" node_paths=PackedStringArray("textRect")]
 layout_mode = 0
 offset_left = 36.0
 offset_top = 160.00002
 offset_right = 52.0
 offset_bottom = 176.00002
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uwexw")
 flat = true
 script = ExtResource("4_gd4vy")
-id = 8
+textRect = NodePath("TextureRect")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/HUD/ActionButton9"]
 texture_filter = 1
 layout_mode = 0
 offset_right = 16.0
 offset_bottom = 16.0
+mouse_filter = 2
 texture = ExtResource("2_huihk")
 stretch_mode = 2
 
@@ -213,16 +295,98 @@ texture_filter = 1
 layout_mode = 0
 offset_right = 320.0
 offset_bottom = 180.0
+mouse_filter = 2
 texture = ExtResource("1_l8v81")
+
+[node name="AgentInfo" type="Label" parent="CanvasLayer/HUD"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 6.0
+offset_top = 50.0
+offset_right = 50.0
+offset_bottom = 123.0
+text = "aaaaaaaaaaaaaa"
+label_settings = SubResource("LabelSettings_qt76e")
+clip_text = true
+text_overrun_behavior = 3
+
+[node name="Messages" type="Label" parent="CanvasLayer/HUD"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 212.0
+offset_top = 132.0
+offset_right = 314.0
+offset_bottom = 174.0
+label_settings = SubResource("LabelSettings_qt76e")
+autowrap_mode = 2
+
+[node name="MainMenu" type="Control" parent="CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(6, 6)
+script = ExtResource("7_blcw0")
+
+[node name="background" type="TextureRect" parent="CanvasLayer/MainMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 180.0
+texture = ExtResource("1_vyht1")
+stretch_mode = 1
+
+[node name="frame" type="TextureRect" parent="CanvasLayer/MainMenu"]
+texture_filter = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("7_sq7yr")
+
+[node name="start" type="Button" parent="CanvasLayer/MainMenu"]
+layout_mode = 0
+offset_left = 12.833334
+offset_top = 11.166667
+offset_right = 81.0
+offset_bottom = 27.166668
+flat = true
+
+[node name="Label" type="Label" parent="CanvasLayer/MainMenu/start"]
+texture_filter = 1
+layout_mode = 0
+offset_left = -0.5
+offset_top = 0.16666698
+offset_right = 68.0
+offset_bottom = 17.500004
+text = "Start"
+label_settings = SubResource("LabelSettings_blcw0")
 
 [node name="GameManager" type="Node2D" parent="."]
 script = ExtResource("2_pyidc")
 levels = Array[PackedScene]([ExtResource("3_vvh5c")])
 agents = Array[PackedScene]([ExtResource("8_bf3um")])
 
+[node name="BattleManager" type="Node2D" parent="."]
+script = ExtResource("10_qt76e")
+
+[node name="ActionManager" type="Node2D" parent="." node_paths=PackedStringArray("actions")]
+script = ExtResource("9_qw60f")
+actions = [NodePath("Reposition")]
+actionHelperTilePackedScene = ExtResource("15_3dlgs")
+
+[node name="Reposition" type="Node" parent="ActionManager"]
+script = ExtResource("15_50g4q")
+actionName = "reposition"
+icon = ExtResource("2_huihk")
+apCost = 1
+
+[node name="CPU" type="Node2D" parent="."]
+script = ExtResource("16_50g4q")
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(95, 49)
-zoom = Vector2(5, 5)
+zoom = Vector2(6, 6)
 script = ExtResource("3_jnlp7")
 
 [node name="CursorManager" type="CharacterBody2D" parent="." node_paths=PackedStringArray("tileCursor")]
@@ -237,6 +401,7 @@ disabled = true
 texture_filter = 1
 texture = ExtResource("4_28aoi")
 
+[connection signal="pressed" from="CanvasLayer/HUD/BottomBar/PassButton" to="CanvasLayer/HUD" method="_on_pass_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/HUD/ActionButton1" to="CanvasLayer/HUD/ActionButton1" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/HUD/ActionButton2" to="CanvasLayer/HUD/ActionButton2" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/HUD/ActionButton3" to="CanvasLayer/HUD/ActionButton3" method="_on_pressed"]
@@ -246,3 +411,4 @@ texture = ExtResource("4_28aoi")
 [connection signal="pressed" from="CanvasLayer/HUD/ActionButton7" to="CanvasLayer/HUD/ActionButton7" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/HUD/ActionButton8" to="CanvasLayer/HUD/ActionButton8" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/HUD/ActionButton9" to="CanvasLayer/HUD/ActionButton9" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/MainMenu/start" to="CanvasLayer/MainMenu" method="_on_start_pressed"]

@@ -1,11 +1,22 @@
-[gd_scene load_steps=3 format=3 uid="uid://w60orf2frbpu"]
+[gd_scene load_steps=4 format=3 uid="uid://w60orf2frbpu"]
 
 [ext_resource type="Script" uid="uid://c8u8hpkj0t687" path="res://Scripts/Agent.gd" id="1_6mtut"]
 [ext_resource type="Texture2D" uid="uid://c3u3cmguxidlq" path="res://Sprites/mech.png" id="2_swk38"]
+[ext_resource type="Texture2D" uid="uid://c30hv7nwnllrq" path="res://Sprites/activateIcon.png" id="3_vqi6p"]
 
-[node name="TestAgent" type="Node2D"]
+[node name="TestAgent" type="Node2D" node_paths=PackedStringArray("activateIcon")]
 script = ExtResource("1_6mtut")
+possibleActions = Array[String](["reposition"])
+agentName = "Test"
+activateIcon = NodePath("activateIcon")
+startingAp = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 texture = ExtResource("2_swk38")
+
+[node name="activateIcon" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(0, -11)
+texture = ExtResource("3_vqi6p")

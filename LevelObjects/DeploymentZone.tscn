@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dtou2dk1gw0wl"]
+
+[ext_resource type="Script" uid="uid://sac76ssef0q5" path="res://Scripts/Level Objects/DeploymentZone.gd" id="1_a65k4"]
+[ext_resource type="Texture2D" uid="uid://0cif0syunyau" path="res://Sprites/cursor.png" id="1_ryebo"]
+
+[node name="DeploymentZone" type="Node2D"]
+script = ExtResource("1_a65k4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_ryebo")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 111.0
+offset_bottom = 15.0
+scale = Vector2(0.51351494, 0.55999976)
+text = "dz"

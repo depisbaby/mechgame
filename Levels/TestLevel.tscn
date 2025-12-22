@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c11ol8a6qgnbw"]
+[gd_scene load_steps=5 format=3 uid="uid://c11ol8a6qgnbw"]
 
 [ext_resource type="Script" uid="uid://dp8s7mynevui4" path="res://Scripts/Level.gd" id="1_uib4f"]
 [ext_resource type="PackedScene" uid="uid://cvffeaqlaa0js" path="res://LevelObjects/TestLevelFloor.tscn" id="2_iqcmb"]
+[ext_resource type="PackedScene" uid="uid://dtou2dk1gw0wl" path="res://LevelObjects/DeploymentZone.tscn" id="2_jyvk6"]
 [ext_resource type="PackedScene" uid="uid://mc04jdyfi1bp" path="res://LevelObjects/TestLevelObject.tscn" id="3_y1yrn"]
 
 [node name="TestLevel" type="Node2D"]
@@ -539,6 +540,30 @@ position = Vector2(48, 80)
 [node name="TestLevelObject9" parent="." instance=ExtResource("3_y1yrn")]
 position = Vector2(80, 48)
 
+[node name="TestLevelObject33" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(128, 96)
+
+[node name="TestLevelObject37" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(128, 16)
+
+[node name="TestLevelObject38" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(112, 16)
+
+[node name="TestLevelObject39" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(96, 16)
+
+[node name="TestLevelObject40" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(80, 16)
+
+[node name="TestLevelObject41" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(144, 16)
+
+[node name="TestLevelObject42" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(160, 16)
+
+[node name="TestLevelObject43" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(128, 48)
+
 [node name="TestLevelObject10" parent="." instance=ExtResource("3_y1yrn")]
 position = Vector2(96, 48)
 
@@ -547,6 +572,15 @@ position = Vector2(80, 64)
 
 [node name="TestLevelObject12" parent="." instance=ExtResource("3_y1yrn")]
 position = Vector2(96, 64)
+
+[node name="TestLevelObject34" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(96, 96)
+
+[node name="TestLevelObject35" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(112, 96)
+
+[node name="TestLevelObject36" parent="." instance=ExtResource("3_y1yrn")]
+position = Vector2(80, 96)
 
 [node name="TestLevelObject13" parent="." instance=ExtResource("3_y1yrn")]
 position = Vector2(32, 112)
@@ -607,3 +641,30 @@ position = Vector2(144, 64)
 
 [node name="TestLevelObject32" parent="." instance=ExtResource("3_y1yrn")]
 position = Vector2(160, 64)
+
+[node name="DeploymentZone" parent="." instance=ExtResource("2_jyvk6")]
+
+[node name="DeploymentZone2" parent="." instance=ExtResource("2_jyvk6")]
+position = Vector2(16, 0)
+
+[node name="DeploymentZone3" parent="." instance=ExtResource("2_jyvk6")]
+position = Vector2(16, 16)
+
+[node name="DeploymentZone4" parent="." instance=ExtResource("2_jyvk6")]
+position = Vector2(0, 16)
+
+[node name="DeploymentZone5" parent="." instance=ExtResource("2_jyvk6")]
+position = Vector2(208, 176)
+attacker = true
+
+[node name="DeploymentZone6" parent="." instance=ExtResource("2_jyvk6")]
+position = Vector2(192, 176)
+attacker = true
+
+[node name="DeploymentZone7" parent="." instance=ExtResource("2_jyvk6")]
+position = Vector2(208, 160)
+attacker = true
+
+[node name="DeploymentZone8" parent="." instance=ExtResource("2_jyvk6")]
+position = Vector2(192, 160)
+attacker = true

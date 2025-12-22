@@ -1,15 +1,19 @@
 extends Node2D
 class_name Agent
 
-
+@export var possibleActions: Array[String]
+@export var agentName: String
+@export var activateIcon : Sprite2D
+@export var startingAp:int
 
 var playerControlled: bool
+var hp: int
+var ap: int
+var ammo: int
+var activated: bool
+var xPos: int
+var yPos: int
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+	agentName = str("test", randi())
 	pass

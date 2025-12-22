@@ -23,14 +23,15 @@ func _process(delta: float) -> void:
 	
 	tileCursor.global_position = Vector2(xMousePositionInLevel * 16,yMousePositionInLevel * 16)
 	
-	#Select agent
+	
 	if Input.is_action_just_pressed("left"):
-		var node:LevelNode = Global.gameManager.level.GetNodeAt(xMousePositionInLevel, yMousePositionInLevel)
-		if node == null:
-			return
-		if node.agent == null:
-			return
-		Global.gameManager.SelectAgent(node.agent)
+		
+		#select agent
+		if Global.gameManager.inGame:
+			var node:LevelNode = Global.gameManager.level.GetNodeAt(xMousePositionInLevel, yMousePositionInLevel)
+			if node != null:
+				if node.agent != null:
+					Global.battleManager.SelectAgent(node.agent)
 		
 		
 	
